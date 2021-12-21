@@ -1,0 +1,50 @@
+body {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: -3px;
+    /* background-image: linear-gradient(to bottom right, rgb(240, 85, 85), rgb(84, 177, 88));
+	background-repeat: no-repeat; */
+    color: #000000;
+    background-color: #000000;
+    margin: 40px auto 40px auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    z-index: 1;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* h1 {
+	font-size: 50px;
+	font-weight: 700;
+} */
+
+img {
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+    transform: translate(-50%, -50%) scale(0.2);
+    animation: fadein 0.4s;
+}
+
+img:hover {
+    transition-delay: 1.5s;
+    z-index: 1;
+}
